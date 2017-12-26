@@ -1,0 +1,50 @@
+<!--
+  author YC
+  create 2017/12/26 0:12
+  盒子模型的简单操作
+  W3C盒子的高和宽指内容、IE盒子的高和宽指border内的所有(含border的宽度)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BoxUsing</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .div {
+            margin: 0px auto;
+            height: 600px;
+            width: 800px;
+            background-color: darkorange;
+        }
+
+        .div1 {
+            float: left;
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            margin: 25px;
+            border: solid 25px;
+        }
+
+        .div2 {
+            float: left;
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+            margin: 25px;
+            border: solid 25px;
+        }
+    </style>
+</head>
+<body>
+<div class="div">
+    <div class="div1"></div>
+    <div class="div2"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!--
+  author YC
+  create 2017/12/26 1:25
+  
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FloatUsing</title>
+    <style>
+        .div {
+            margin: 0px auto;
+            height: 600px;
+            width: 900px;
+            background-color: darkorange;
+        }
+
+        .div1 {
+            float: left;
+            height: 300px;
+            width: 400px;
+            background-color: yellow;
+        }
+
+        .div2 {
+            float: right;
+            height: 300px;
+            width: 400px;
+            background-color: hotpink;
+        }
+
+        /*通过在div3上面加入一个元素来使div3中margin-top属性生效*/
+        .clearDiv {
+            clear: both;
+        }
+
+        /*挨着浮动元素设置margin-top无效*/
+        .div3 {
+            height: 300px;
+            width: 800px;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+<div class="div">
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="clearDiv"></div>
+    <div class="div3"></div>
+</div>
+</body>
+</html>

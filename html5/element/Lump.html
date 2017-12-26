@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用元素的分类</title>
+    <link rel="stylesheet" href="myCSS.css">
+    <style>
+        span{
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+<!--
+ YC: 2017/10/21
+
+ 块元素：显示时，通常会以新行开始
+ 如：<h1>、<p>、<ul>
+-->
+<p>HelloWorld</p>
+<ul>HelloWorld</ul>
+<h1>HelloWorld</h1>
+
+<!--
+ YC: 2017/10/21
+
+ 内联元素：通常不会以换行开始
+ 如：<b>、<a>、<img>
+-->
+<b>HelloWorld</b>
+<img src="" alt="HelloWorld">
+<a href="javascript:void(0)">HelloWorld</a>
+
+<!--
+ YC: 2017/10/21
+
+ div元素（块元素），主要是组合html元素的容器
+-->
+<div id="divId">
+    <p>HelloWorld!</p>
+    <a>HelloWorld!</a>
+</div>
+
+<!--
+ YC: 2017/10/21
+
+ span元素（内联元素），可作为文本的容器
+-->
+<div id="divSpan">
+    <p><span>Hello</span>World!</p>
+</div>
+</body>
+</html>

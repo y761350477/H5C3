@@ -1,0 +1,74 @@
+<!--
+  author YC
+  create 2017/12/25 23:45
+  相对定位、绝对定位、固定定位、继承父类定位方式的属性、z-index层优先级的使用
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PositionUsing</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*static 	默认值。没有定位，元素出现在正常的流中(忽略 top, bottom, left, right 或者 z-index 声明)*/
+        .divTest {
+            width: 200px;
+            height: 200px;
+            background-color: lightpink;
+            position: static;
+            /*top设置无效*/
+            top: 200px;
+        }
+
+        /*相对定位*/
+        .div {
+            position: relative;
+            height: 900px;
+            width: 500px;
+            background-color: red;
+            left: 10px;
+            top: 10px;
+        }
+
+        /*绝对定位*/
+        .span {
+            position: absolute;
+            background-color: orange;
+            color: yellow;
+            right: 0px;
+        }
+
+        /*固定定位*/
+        .divFixed {
+            position: fixed;
+            background-color: darkorchid;
+            width: 500px;
+            height: 200px;
+            top: 100px;
+            z-index: 1;
+        }
+
+        /*inheritTest继承父类的定位方式的属性*/
+        .inheritTest{
+            position: inherit;
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="divFixed"></div>
+<div class="divTest"></div>
+<div class="div">
+    <span class="span">浏览次数</span>
+    <span class="inheritTest">inheritUsing</span>
+</div>
+
+</body>
+</html>

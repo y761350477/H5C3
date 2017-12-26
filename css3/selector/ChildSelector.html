@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*同一父级多个子选择器修饰的方法*/
+        h1 > em > strong, h1 > em > span{color:red;}
+
+        /*如下效果同上，简写而已*/
+        /*h1 > em > strong, span{color:red;}*/
+    </style>
+</head>
+<body>
+<!--
+ YC: 2017/10/24
+
+ 与后代选择器相比，子元素选择器（Child selectors）只能选择作为某元素子元素的元素。
+-->
+<h1>This is <strong>very</strong> <strong>very</strong> important.</h1>
+<h1>This is <em>really <strong>very</strong><span>nihs</span></em> important.</h1>
+</body>
+</html>

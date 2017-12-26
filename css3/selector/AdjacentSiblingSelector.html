@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li + li {font-weight:bold;}
+    </style>
+</head>
+<body>
+<!--
+ YC: 2017/10/24
+
+ 相邻兄弟选择器（Adjacent sibling selector）可选择紧接在另一元素后的元素，且二者有相同父元素。
+ 用一个结合符只能选择两个相邻兄弟中的第二个元素。
+ 通过P和h1的组合的多次测试总结：
+    1、相邻兄弟选择器只对第二个起修饰作用;
+    2、相邻兄弟选择器标签不能颠倒位置，不然修饰不起作用（如果是只有两个标签的情况下，下面例子的多不标签修饰效果参看第一条总结）;
+-->
+<p>This is paragraph.</p>
+<h1>This is a heading.</h1>
+<p>This is paragraph.</p>
+<p>This is paragraph.</p>
+<p>This is paragraph.</p>
+<p>This is paragraph.</p>
+
+<div>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+    <ol>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ol>
+</div>
+</body>
+</html>

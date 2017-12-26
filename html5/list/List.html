@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表</title>
+    <style>
+        .setColor {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+ ol的属性使用:
+ a，从小写字母a
+ A，从大写字母A
+ i，从小写i开始
+ I，从大写I开始
+ start属性，定义从数字几开始
+ -->
+<span class="setColor">有序列表</span><br/>
+<ol start="10">
+    <li>苹果</li>
+    <li>香蕉</li>
+    <li>桔子</li>
+</ol>
+
+<!--
+ ul的属性使用:
+ disc默认属性，实体圆
+ circle，空心圆
+ square，方块
+ -->
+<span class="setColor">无序列表</span><br/>
+<ul type="circle">
+    <li>苹果</li>
+    <li>香蕉</li>
+    <li>桔子</li>
+</ul>
+
+<!--
+ YC: 2017/10/20
+
+ 嵌套列表的使用
+-->
+<span class="setColor">无序列表嵌套使用</span><br/>
+<ul>
+    <li>宠物：</li>
+    <ul>
+        <li>小猪</li>
+        <li>小狗</li>
+        <li>小猫</li>
+    </ul>
+    <li>人类：</li>
+    <ul>
+        <li>中国人</li>
+        <li>美国人</li>
+        <li>英国人</li>
+    </ul>
+</ul>
+<span class="setColor">有序列表嵌套使用</span><br/>
+<ol>
+    <li>宠物：</li>
+    <ol>
+        <li>小猪</li>
+        <li>小狗</li>
+        <li>小猫</li>
+    </ol>
+    <li>人类：</li>
+    <ol>
+        <li>中国人</li>
+        <li>美国人</li>
+        <li>英国人</li>
+    </ol>
+</ol>
+
+<dl>
+    <dt>HelloWorld!</dt>
+    <dd>每一门语言都会打印一个HelloWorld！</dd>
+    <dt>HelloWorld!</dt>
+    <dd>每一门语言都会打印一个HelloWorld！</dd>
+    <dt>HelloWorld!</dt>
+    <dd>每一门语言都会打印一个HelloWorld！</dd>
+</dl>
+</body>
+</html>

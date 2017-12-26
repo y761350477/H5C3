@@ -1,0 +1,60 @@
+<!--
+  author YC
+  create 2017/12/25 23:18
+  DIV和SPAN的区别、DIV中文字水平居中设置、DIV居中设置、DIV与SPAN之间的效果转换
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DivUsing</title>
+    <style>
+        .div {
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+        }
+
+        .span {
+            background-color: red;
+            /*高和宽对内联元素无效*/
+            height: 200px;
+            width: 200px;
+        }
+
+        .divCenter {
+            color: yellow;
+            height: 200px;
+            width: 500px;
+            background-color: black;
+            /*DIV居中显示效果设置*/
+            margin: 0px auto;
+            /*DIV中文字居中显示设置*/
+            line-height: 200px;
+            text-align: center;
+        }
+
+        /*DIV转换成SPAN效果*/
+        .divToSpan {
+            display: inline;
+            background-color: darkorange;
+        }
+
+        /*SPAN转换成DIV效果*/
+        .spanToDiv {
+            display: block;
+            background-color: darkorchid;
+        }
+    </style>
+</head>
+<body>
+<!--块级元素-->
+<div class="div">YangChen</div>
+<!--内联元素-->
+<span class="span">YC</span>
+<!--DIV居中显示效果-->
+<div class="divCenter">DIV居中显示效果</div>
+<div class="divToSpan">DIV转换成SPAN效果</div>
+<span class="spanToDiv">SPAN转换成DIV效果</span>
+</body>
+</html>
