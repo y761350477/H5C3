@@ -34,17 +34,24 @@
             text-align: center;
         }
 
-        /*DIV转换成SPAN效果*/
+        /*display属性: 块规元素转换行内元素的效果*/
         .divToSpan {
             display: inline;
             background-color: darkorange;
         }
 
-        /*SPAN转换成DIV效果*/
+        /*display属性: 行内元素转换块状元素的效果*/
         .spanToDiv {
             display: block;
             background-color: darkorchid;
         }
+
+        /*display属性: 隐藏的效果*/
+        .spanNone {
+            display: none;
+            background-color: orange;
+        }
+        
     </style>
 </head>
 <body>
@@ -56,5 +63,6 @@
 <div class="divCenter">DIV居中显示效果</div>
 <div class="divToSpan">DIV转换成SPAN效果</div>
 <span class="spanToDiv">SPAN转换成DIV效果</span>
+<span class="spanNone">SPAN转换成DIV效果</span>
 </body>
 </html>
