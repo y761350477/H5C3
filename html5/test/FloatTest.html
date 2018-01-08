@@ -1,0 +1,47 @@
+<!--
+  author YC
+  create 2018/1/4 16:38
+  关于浮动元素的理解:
+    clear:(设置了clear属性的元素, 清除浮动的意思是指前一个元素对自身位置的影响的清除);
+        ->none;(不清除影响)
+        ->left;(如果前一个浮动元素是是左浮动, 那么如果设置为right, 则不能清除前一个元素对自身位置的影响, 设置为left则清除影响)
+        ->right;(逻辑同上)
+        ->both;(不管前一个元素是左浮动还是右浮动, 都清除浮动)
+        (注: 浮动塌陷的情况下,前一个元素是浮动元素, 自身清除浮动后设置为浮动元素, 并不能解决浮动塌陷的问题, 只能清除前一个元素对自身位置的影响)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div {
+            border: 1px solid orange;
+        }
+
+        .div1 {
+            float: right;
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .div2 {
+            float: right;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            clear: right;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="div">
+    <div class="div1">div1</div>
+    <div class="div3">div3</div>
+    <div class="div2">div2</div>
+</div>
+</body>
+</html>
